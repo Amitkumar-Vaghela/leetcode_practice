@@ -25,3 +25,11 @@ class Solution {
         return count >= n;
     }
 }
+
+/*
+int[] flowerbed = {1, 0, 0, 0, 1};
+int n = 1;
+
+
+true
+*/
