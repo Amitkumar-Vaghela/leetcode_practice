@@ -32,13 +32,3 @@ class Solution {
         return sb.length(); // Return the length of the compressed string
     }
 }
-
-
-/*
-input
-chars = ["a","a","b","b","c","c","c"]
-
-output
-Return 6, and the first 6 characters of the array should be: ["a","2","b","2","c","3"]
-
-*/
