@@ -15,3 +15,8 @@ public class Solution {
         return result.toString();
     }
 }
+
+/*
+input: s = "leet**cod*e"
+output:"lecoe"
+*/
