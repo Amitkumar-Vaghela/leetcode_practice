@@ -59,3 +59,47 @@ class Solution {
         return result;
     }
 }
+
+
+
+
+/*
+
+if the input :  5
+
+Solution 1:
+Q....  
+....Q  
+..Q..  
+.....Q  
+.Q... 
+
+Solution 2:
+.Q...  
+.....Q  
+..Q..  
+Q....  
+....Q 
+
+Solution 3:
+..Q..  
+Q....  
+.....Q  
+....Q  
+.Q... 
+
+Solution 4:
+...Q.  
+Q....  
+..Q..  
+....Q  
+.Q... 
+
+Solution 5:
+....Q  
+Q....  
+..Q..  
+.Q...  
+...Q. 
+
+*/
