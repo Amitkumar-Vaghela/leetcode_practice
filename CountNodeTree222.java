@@ -27,3 +27,13 @@ public class Solution {
         return height;
     }
 }
+
+
+
+Example 2:
+Input: root = []
+Output: 0
+    
+Example 3:
+Input: root = [1]
+Output: 1
