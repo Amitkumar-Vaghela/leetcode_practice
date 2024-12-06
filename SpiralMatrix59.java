@@ -1,3 +1,50 @@
+class Solution {
+    public int[][] generateMatrix(int n) {
+        int arr[][] = new int[n][n];
+        int count = 1;
+
+        // Define variable boundaries
+        int minRow = 0;
+        int maxRow = n - 1;
+        int minCol = 0;
+        int maxCol = n - 1;
+
+        while (count <= n * n) {
+            // Traverse from left to right on the top row
+            for (int i = minCol; i <= maxCol; i++) {
+                arr[minRow][i] = count;
+                count++;
+            }
+            minRow++; // Move top boundary down
+
+            // Traverse from top to bottom on the rightmost column
+            for (int j = minRow; j <= maxRow; j++) {
+                arr[j][maxCol] = count;
+                count++;
+            }
+            maxCol--; // Move right boundary left
+
+            // Traverse from right to left on the bottom row
+            if (minRow <= maxRow) {
+                for (int k = maxCol; k >= minCol; k--) {
+                    arr[maxRow][k] = count;
+                    count++;
+                }
+                maxRow--; // Move bottom boundary up
+            }
+
+            // Traverse from bottom to top on the leftmost column
+            if (minCol <= maxCol) {
+                for (int l = maxRow; l >= minRow; l--) {
+                    arr[l][minCol] = count;
+                    count++;
+                }
+                minCol++; // Move left boundary right
+            }
+        }
+        return arr;
+    }
+}
 
 
 
