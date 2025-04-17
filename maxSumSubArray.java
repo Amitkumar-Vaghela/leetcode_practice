@@ -32,21 +32,4 @@ class Solution {
 }
 
 
-// result will be 
-/*
-Given the input array nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4}, the algorithm works as follows:
-
-Initial: currSum = -2, maxSum = -2
-i = 1: currSum = max(-2 + 1, 1) = 1, maxSum = max(-2, 1) = 1
-i = 2: currSum = max(1 + (-3), -3) = -2, maxSum = max(1, -2) = 1
-i = 3: currSum = max(-2 + 4, 4) = 4, maxSum = max(1, 4) = 4
-i = 4: currSum = max(4 + (-1), -1) = 3, maxSum = max(4, 3) = 4
-i = 5: currSum = max(3 + 2, 2) = 5, maxSum = max(4, 5) = 5
-i = 6: currSum = max(5 + 1, 1) = 6, maxSum = max(5, 6) = 6
-i = 7: currSum = max(6 + (-5), -5) = 1, maxSum = max(6, 1) = 6
-i = 8: currSum = max(1 + 4, 4) = 5, maxSum = max(6, 5) = 6 
-*/
-
-// Maximum subarray sum is: 6
-
 
