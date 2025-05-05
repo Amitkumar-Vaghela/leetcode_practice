@@ -1,27 +1,26 @@
 // calculator using switch case
+// 1 for  Addition
+// 2nd for  Subtraction
+// 3rd for Division
+// 4th for  Multiplication
 
 import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter first number:");
-        double num1 = sc.nextDouble();
+        double num1 = scanner.nextDouble();
 
         System.out.println("Enter second number:");
-        double num2 = sc.nextDouble();
-
-        System.out.println("Choose operation:");
-        System.out.println("1 = Addition (+)");
-        System.out.println("2 = Subtraction (-)");
-        System.out.println("3 = Division (/)");
-        System.out.println("4 = Multiplication (*)");
-
-        int choice = sc.nextInt();
+        double num2 = scanner.nextDouble();
+        
+        System.out.println("Enter the case for operation :");
+        int n = scanner.nextInt();
         double result;
 
-        switch (choice) {
+        switch (n) {
             case 1:
                 result = num1 + num2;
                 System.out.println("Result: " + result);
