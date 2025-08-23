@@ -31,3 +31,18 @@ class StockSpanner {
         return span;
     }
 }
+
+
+public class Main {
+    public static void main(String[] args) {
+        StockSpanner ss = new StockSpanner();
+        System.out.println(ss.next(100)); // 1
+        System.out.println(ss.next(80));  // 1
+        System.out.println(ss.next(60));  // 1
+        System.out.println(ss.next(70));  // 2
+        System.out.println(ss.next(60));  // 1
+        System.out.println(ss.next(75));  // 4
+        System.out.println(ss.next(85));  // 6
+    }
+}
+
